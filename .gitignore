@@ -88,3 +88,6 @@ ipch/
 # Crowdin In-Context
 */nitrofiles/languages/ic
 romsel_aktheme/nitrofiles/language/lang_ic
+
+# locally included headers
+ndsincludes/

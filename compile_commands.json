@@ -1,0 +1,2910 @@
+[
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/bootloader/build -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/bootloader/build  -DARM7 -DNO_DLDI -marm -c /Users/Shared/TWiLightMenu/booter/bootloader/source/arm9clear.arm.c -o arm9clear.arm.o",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/arm9clear.arm.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/arm9clear.arm.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/bootloader/build -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/bootloader/build  -DARM7 -DNO_DLDI -c /Users/Shared/TWiLightMenu/booter/bootloader/source/boot.c -o boot.o",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/boot.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/boot.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/bootloader/build -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/bootloader/build  -DARM7 -DNO_DLDI -c /Users/Shared/TWiLightMenu/booter/bootloader/source/dldi_patcher.c -o dldi_patcher.o",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/dldi_patcher.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/dldi_patcher.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/bootloader/build -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/bootloader/build  -DARM7 -DNO_DLDI -c /Users/Shared/TWiLightMenu/booter/bootloader/source/fat.c -o fat.o",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/fat.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/fat.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/bootloader/build -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/bootloader/build  -DARM7 -DNO_DLDI -c /Users/Shared/TWiLightMenu/booter/bootloader/source/sdmmc.c -o sdmmc.o",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-DNO_DLDI",
+   "-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/arm9code/mpu_reset.s",
+   "-o",
+   "mpu_reset.elf"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/arm9code/mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/build/arm9mpu_reset.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-DNO_DLDI",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/arm9mpu_reset.s",
+   "-o",
+   "arm9mpu_reset.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/arm9mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/build/bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-DNO_DLDI",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/bios.s",
+   "-o",
+   "bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/build/io_dldi.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-DNO_DLDI",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/io_dldi.s",
+   "-o",
+   "io_dldi.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/io_dldi.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/build/load_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter/bootloader/build",
+   "-DNO_DLDI",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter/bootloader/source/load_crt0.s",
+   "-o",
+   "load_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/bootloader/source/load_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootstub",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-Wl,-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "bootstub.s",
+   "-o",
+   "bootstub.elf"
+  ],
+  "file": "bootstub.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/build -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/booter/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/booter/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/build -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/build -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/build -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build  -DARM7 -marm -c /Users/Shared/TWiLightMenu/booter_fc/bootloader/source/arm9clear.arm.c -o arm9clear.arm.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/arm9clear.arm.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/arm9clear.arm.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/booter_fc/bootloader/source/boot.c -o boot.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/boot.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/boot.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/booter_fc/bootloader/source/dldi_patcher.c -o dldi_patcher.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/dldi_patcher.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/dldi_patcher.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/booter_fc/bootloader/source/fat.c -o fat.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/fat.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/fat.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/booter_fc/bootloader/source/sdmmc.c -o sdmmc.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build/arm7clear.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/arm7clear.s",
+   "-o",
+   "arm7clear.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/arm7clear.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/arm9code/mpu_reset.s",
+   "-o",
+   "mpu_reset.elf"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/arm9code/mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build/arm9mpu_reset.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/arm9mpu_reset.s",
+   "-o",
+   "arm9mpu_reset.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/arm9mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build/bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/bios.s",
+   "-o",
+   "bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build/io_dldi.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/io_dldi.s",
+   "-o",
+   "io_dldi.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/io_dldi.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/build/load_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/booter_fc/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/load_crt0.s",
+   "-o",
+   "load_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/bootloader/source/load_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/arm7/include -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/build -DARM7 -DNO_SDMMC -c /Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/booter_fc/flashcart_specifics/r4ils/arm7/../../../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/3dssplash/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/3dssplash/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/3dssplash/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/3dssplash/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build  -DARM7 -marm -c /Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/arm9clear.arm.c -o arm9clear.arm.o",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/arm9clear.arm.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/arm9clear.arm.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/boot.c -o boot.o",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/boot.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/boot.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build/arm7clear.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/arm7clear.s",
+   "-o",
+   "arm7clear.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/arm7clear.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/arm9code/mpu_reset.s",
+   "-o",
+   "mpu_reset.elf"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/arm9code/mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build/arm9mpu_reset.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/arm9mpu_reset.s",
+   "-o",
+   "arm9mpu_reset.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/arm9mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build/load_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/gbapatcher/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/load_crt0.s",
+   "-o",
+   "load_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/bootloader/source/load_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/gbapatcher/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb-interwork -I/Users/Shared/TWiLightMenu/gbapatcher/arm7/include -I/Users/Shared/TWiLightMenu/gbapatcher/arm7/build -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/gbapatcher/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/gbapatcher/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/gbapatcher/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/gbapatcher/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -marm -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/source/arm9clear.arm.c -o arm9clear.arm.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/arm9clear.arm.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/arm9clear.arm.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/source/boot.c -o boot.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/boot.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/boot.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/source/dldi_patcher.c -o dldi_patcher.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/dldi_patcher.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/dldi_patcher.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/source/fat.c -o fat.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/fat.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/fat.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/source/i2c.c -o i2c.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/source/lzss.c -o lzss.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/lzss.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/lzss.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/source/sdmmc.c -o sdmmc.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_menu/..//source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/arm9code/mpu_reset.s",
+   "-o",
+   "mpu_reset.elf"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/arm9code/mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build/arm9mpu_reset.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/arm9mpu_reset.s",
+   "-o",
+   "arm9mpu_reset.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/arm9mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build/bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/bios.s",
+   "-o",
+   "bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build/io_dldi.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/io_dldi.s",
+   "-o",
+   "io_dldi.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/io_dldi.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/build/load_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_menu/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/load_crt0.s",
+   "-o",
+   "load_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_menu/source/load_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/quickmenu/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/quickmenu/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/quickmenu/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/quickmenu/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -marm -c /Users/Shared/TWiLightMenu/universal/bootloader_app/source/arm9clear.arm.c -o arm9clear.arm.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/arm9clear.arm.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/arm9clear.arm.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_app/source/boot.c -o boot.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/boot.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/boot.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_app/source/dldi_patcher.c -o dldi_patcher.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/dldi_patcher.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/dldi_patcher.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_app/source/fat.c -o fat.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/fat.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/fat.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_app/source/i2c.c -o i2c.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_app/source/lzss.c -o lzss.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/lzss.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/lzss.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_app/source/sdmmc.c -o sdmmc.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build -I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/universal/bootloader_app/build  -DARM7 -c /Users/Shared/TWiLightMenu/universal/bootloader_app/..//source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/..//source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/..//source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/arm9code/mpu_reset.s",
+   "-o",
+   "mpu_reset.elf"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/arm9code/mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/build/arm9mpu_reset.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/arm9mpu_reset.s",
+   "-o",
+   "arm9mpu_reset.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/arm9mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/build/bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/bios.s",
+   "-o",
+   "bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/build/io_dldi.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/io_dldi.s",
+   "-o",
+   "io_dldi.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/io_dldi.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/build/load_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/..//include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/universal/bootloader_app/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/load_crt0.s",
+   "-o",
+   "load_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/universal/bootloader_app/source/load_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/manual/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/manual/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/build -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/manual/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/manual/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/imageview/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/imageview/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/build -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/imageview/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/imageview/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_aktheme/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_dsimenutheme/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/romsel_r4theme/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -marm -c /Users/Shared/TWiLightMenu/settings/bootloader/source/arm9clear.arm.c -o arm9clear.arm.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/arm9clear.arm.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/arm9clear.arm.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/settings/bootloader/source/boot.c -o boot.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/boot.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/boot.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/settings/bootloader/source/dldi_patcher.c -o dldi_patcher.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/dldi_patcher.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/dldi_patcher.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/settings/bootloader/source/fat.c -o fat.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/fat.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/fat.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/settings/bootloader/source/i2c.c -o i2c.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/settings/bootloader/source/lzss.c -o lzss.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/lzss.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/lzss.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/settings/bootloader/source/sdmmc.c -o sdmmc.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/bootloader/build -I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/settings/bootloader/../../universal/source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/arm9code/mpu_reset.s",
+   "-o",
+   "mpu_reset.elf"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/arm9code/mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/build/arm9mpu_reset.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/arm9mpu_reset.s",
+   "-o",
+   "arm9mpu_reset.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/arm9mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/build/bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/bios.s",
+   "-o",
+   "bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/build/io_dldi.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/io_dldi.s",
+   "-o",
+   "io_dldi.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/io_dldi.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/build/load_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/settings/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/settings/bootloader/source/load_crt0.s",
+   "-o",
+   "load_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/bootloader/source/load_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/settings/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/settings/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/build -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/settings/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/settings/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/cardEngine.c -o cardEngine.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/cardEngine.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/cardEngine.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/spi.c -o spi.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/spi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/spi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build/bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/bios.s",
+   "-o",
+   "bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build/card_engine_header.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/card_engine_header.s",
+   "-o",
+   "card_engine_header.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/card_engine_header.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build/cheat_engine.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/cheat_engine.s",
+   "-o",
+   "cheat_engine.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/cheat_engine.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build/debugprint.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/debugprint.s",
+   "-o",
+   "debugprint.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/cardengine_arm7/source/debugprint.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/decompress.c -o decompress.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/decompress.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/decompress.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/encryption.c -o encryption.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/encryption.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/encryption.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/find_common.c -o find_common.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/find_common.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/find_common.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/hook.c -o hook.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/hook.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/hook.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/main.arm7.c -o main.arm7.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/main.arm7.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/main.arm7.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/main.arm9.c -o main.arm9.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/main.arm9.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/main.arm9.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/read_card.c -o read_card.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/read_card.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/read_card.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/u128_math.c -o u128_math.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/u128_math.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/u128_math.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool/dsi.c -o dsi.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool/dsi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool/dsi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl/aes.c -o aes.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl/aes.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl/aes.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl/bignum.c -o bignum.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl/bignum.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl/bignum.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i/crypto.c -o crypto.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i/crypto.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i/crypto.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i/f_xy.c -o f_xy.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i/f_xy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i/f_xy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/actual_jump.arm7.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/actual_jump.arm7.s",
+   "-o",
+   "actual_jump.arm7.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/actual_jump.arm7.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/actual_jump.arm9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/actual_jump.arm9.s",
+   "-o",
+   "actual_jump.arm9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/actual_jump.arm9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/bios7.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/bios7.s",
+   "-o",
+   "bios7.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/bios7.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/bios9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/bios9.s",
+   "-o",
+   "bios9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/bios9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/clear_cache.arm9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/clear_cache.arm9.s",
+   "-o",
+   "clear_cache.arm9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/clear_cache.arm9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/clear_mem.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/clear_mem.s",
+   "-o",
+   "clear_mem.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/clear_mem.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/crt0.arm9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/crt0.arm9.s",
+   "-o",
+   "crt0.arm9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/crt0.arm9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/launch_ds_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/launch_ds_crt0.s",
+   "-o",
+   "launch_ds_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/launch_ds_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/read_bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/read_bios.s",
+   "-o",
+   "read_bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/read_bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/build/scfg_clock_change.arm9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/twltool",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/polarssl",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/gm9i",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/scfg_clock_change.arm9.s",
+   "-o",
+   "scfg_clock_change.arm9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloader/source/scfg_clock_change.arm9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/decompress.c -o decompress.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/decompress.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/decompress.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/encryption.c -o encryption.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/encryption.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/encryption.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/find_common.c -o find_common.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/find_common.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/find_common.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/hook.c -o hook.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/hook.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/hook.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/main.arm7.c -o main.arm7.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/main.arm7.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/main.arm7.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/main.arm9.c -o main.arm9.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/main.arm9.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/main.arm9.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/read_card.c -o read_card.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/read_card.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/read_card.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb-interwork -march=armv4t -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build -DARM7 -std=gnu99 -c /Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/actual_jump.arm7.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/actual_jump.arm7.s",
+   "-o",
+   "actual_jump.arm7.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/actual_jump.arm7.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/actual_jump.arm9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/actual_jump.arm9.s",
+   "-o",
+   "actual_jump.arm9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/actual_jump.arm9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/bios7.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/bios7.s",
+   "-o",
+   "bios7.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/bios7.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/bios9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/bios9.s",
+   "-o",
+   "bios9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/bios9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/clear_cache.arm9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/clear_cache.arm9.s",
+   "-o",
+   "clear_cache.arm9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/clear_cache.arm9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/clear_mem.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/clear_mem.s",
+   "-o",
+   "clear_mem.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/clear_mem.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/crt0.arm9.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/crt0.arm9.s",
+   "-o",
+   "crt0.arm9.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/crt0.arm9.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/launch_ds_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/launch_ds_crt0.s",
+   "-o",
+   "launch_ds_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/launch_ds_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build/read_bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb-interwork",
+   "-march=armv4t",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../include",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/read_bios.s",
+   "-o",
+   "read_bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/slot1launch/bootloaderAlt/source/read_bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -marm -c /Users/Shared/TWiLightMenu/title/bootloader/source/arm9clear.arm.c -o arm9clear.arm.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/arm9clear.arm.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/arm9clear.arm.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/title/bootloader/source/boot.c -o boot.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/boot.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/boot.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/title/bootloader/source/dldi_patcher.c -o dldi_patcher.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/dldi_patcher.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/dldi_patcher.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/title/bootloader/source/fat.c -o fat.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/fat.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/fat.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/title/bootloader/source/i2c.c -o i2c.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/title/bootloader/source/lzss.c -o lzss.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/lzss.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/lzss.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/title/bootloader/source/sdmmc.c -o sdmmc.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/bootloader/build -I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/bootloader/build  -DARM7 -c /Users/Shared/TWiLightMenu/title/bootloader/../../universal/source/tonccpy/tonccpy.c -o tonccpy.o",
+   "/Users/Shared/TWiLightMenu/title/bootloader/../../universal/source/tonccpy/tonccpy.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/../../universal/source/tonccpy/tonccpy.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-Ttext=0",
+   "-x",
+   "assembler-with-cpp",
+   "-nostartfiles",
+   "-nostdlib",
+   "/Users/Shared/TWiLightMenu/title/bootloader/arm9code/mpu_reset.s",
+   "-o",
+   "mpu_reset.elf"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/arm9code/mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/title/bootloader/build/arm9mpu_reset.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/arm9mpu_reset.s",
+   "-o",
+   "arm9mpu_reset.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/arm9mpu_reset.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/title/bootloader/build/bios.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/bios.s",
+   "-o",
+   "bios.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/bios.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/title/bootloader/build/io_dldi.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/io_dldi.s",
+   "-o",
+   "io_dldi.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/io_dldi.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/bootloader/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/title/bootloader/build/load_crt0.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/../../universal/include",
+   "-I/Users/Shared/TWiLightMenu/ndsincludes",
+   "-I/Users/Shared/TWiLightMenu/title/bootloader/build",
+   "-c",
+   "/Users/Shared/TWiLightMenu/title/bootloader/source/load_crt0.s",
+   "-o",
+   "load_crt0.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/bootloader/source/load_crt0.s"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/source/main.c -o main.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/source/main.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/source/main.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_codec.c -o my_codec.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_codec.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_codec.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_i2c.c -o my_i2c.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_i2c.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_i2c.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_input.c -o my_input.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_input.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_input.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_touch.c -o my_touch.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_touch.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/source/my_touch.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/dldi.c -o dldi.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/dldi.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c -o my_sdmmc.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/my_sdmmc.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   " -g -Wall -O2 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -flto -march=armv4t -mthumb -mthumb-interwork -I/Users/Shared/TWiLightMenu/title/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/build -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/arm7/include -I/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/include -I/Users/Shared/TWiLightMenu/ndsincludes -I/Users/Shared/TWiLightMenu/title/arm7/build -DARM7 -c /Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/my_system.c -o my_system.o",
+   "/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/../../universal/sdmmc/arm7/source/my_system.c"
+ },
+ {
+  "directory": "/Users/Shared/TWiLightMenu/title/arm7/build",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "/Users/Shared/TWiLightMenu/title/arm7/build/util.d",
+   "-x",
+   "assembler-with-cpp",
+   "-g",
+   "-march=armv4t",
+   "-mthumb",
+   "-mthumb-interwork",
+   "-flto",
+   "-c",
+   "/Users/Shared/TWiLightMenu/title/arm7/source/util.s",
+   "-o",
+   "util.o"
+  ],
+  "file": "/Users/Shared/TWiLightMenu/title/arm7/source/util.s"
+ }
+]
