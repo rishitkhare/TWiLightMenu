@@ -1008,31 +1008,46 @@ void bgOperations(bool waitFrame) {
 }
 
 int dsiMenuTheme(void) {
+	// load menu settings
 	ms().loadSettings();
+
+	// load bootstrap(??) settings
 	bs().loadSettings();
+
+	// initialize log.txt stream (use logPrint() to write to it). Output is found in
+	// root/_nds/TwilightMenu/
 	logInit();
+
+	// Appears to be some widescreen config for 3DS models? Not sure what the last part says
 	if (sdFound() && ms().consoleModel >= 2 && (!isDSiMode() || !sys().arm7SCFGLocked())) {
 		CIniFile lumaConfig("sd:/luma/config.ini");
 		widescreenFound = ((access("sd:/_nds/TWiLightMenu/TwlBg/Widescreen.cxi", F_OK) == 0) && (lumaConfig.GetInt("boot", "enable_external_firm_and_modules", 0) == true));
 		logPrint(widescreenFound ? "Widescreen found\n" : "Widescreen not found\n");
 	}
+
+	// rumble pak accessory - not compatible with DSi
 	if (ms().theme == TWLSettings::EThemeDSi && sys().isRegularDS()) {
 		useRumble = my_isRumbleInserted();
 		logPrint(useRumble ? "Rumble found\n" : "Rumble not found\n");
 	}
-	tfn(); //
+
+	// tfn = "theme file names" singleton
+	tfn(); // I have literally no idea why this is here. Maybe to initialize the singleton?
 	tc().loadConfig();
 	tex().videoSetup(); // allocate texture pointers
 
+	// text initialization stuff - fonts, language settings, etc
 	fontInit();
 	logPrint("\n");
 
 	langInit();
 
+	// fade from black or white depending on theme
 	if (ms().theme == TWLSettings::EThemeSaturn || ms().theme == TWLSettings::EThemeHBL) {
 		whiteScreen = false;
 	}
 
+	// load appropriate textures from theme
 	if (ms().theme == TWLSettings::EThemeHBL) {
 		tex().loadHBTheme();
 	} else if (ms().theme == TWLSettings::EThemeSaturn) {
@@ -1043,15 +1058,20 @@ int dsiMenuTheme(void) {
 		tex().loadDSiTheme();
 	}
 
+	// seed the random number generator with a consistent seed (not sure why, probably for better bug testing idk)
 	srand(time(NULL));
 	
 	graphicsInit();
 	iconManagerInit();
 
+	// after 10 frames of held down, repeat the input every 2 frames.
+	// lets you hold the right/left button to scroll faster and stuff
 	keysSetRepeat(10, 2);
 
+	// check settings to see if gbarunner3 should be used to load gba roms
 	ms().gbaR3Test = (access(sys().isRunFromSD() ? "sd:/_nds/TWiLightMenu/emulators/GBARunner3.nds" : "fat:/_nds/TWiLightMenu/emulators/GBARunner3.nds", F_OK) == 0);
 
+	// locate the gba bios within the filesystem
 	if (sdFound()) {
 		statvfs("sd:/", &st[0]);
 
@@ -1078,6 +1098,7 @@ int dsiMenuTheme(void) {
 
 	std::string filename;
 
+	// Region setting
 	if (sdFound() && ms().consoleModel < 2 && ms().launcherApp != -1) {
 		u8 setRegion = 0;
 
@@ -1121,6 +1142,7 @@ int dsiMenuTheme(void) {
 		}
 	}
 
+	// saturn startup sound
 	if (ms().theme == TWLSettings::EThemeSaturn) {
 		//logPrint("snd().playStartup()\n");
 		logPrint("snd()\n");
@@ -1130,6 +1152,7 @@ int dsiMenuTheme(void) {
 		controlTopBright = false;
 	}
 
+	// something related to DSiWare saving?
 	if (ms().previousUsedDevice && bothSDandFlashcard() && ms().launchType[ms().previousUsedDevice] == Launch::EDSiWareLaunch
 	&& ((access(ms().dsiWarePubPath.c_str(), F_OK) == 0 && access("sd:/_nds/TWiLightMenu/tempDSiWare.pub", F_OK) == 0)
 	 || (access(ms().dsiWarePrvPath.c_str(), F_OK) == 0 && access("sd:/_nds/TWiLightMenu/tempDSiWare.prv", F_OK) == 0)
@@ -1166,6 +1189,7 @@ int dsiMenuTheme(void) {
 		updateText(false);
 	}
 
+	// saturn theme loading screen?
 	if (ms().theme != TWLSettings::EThemeSaturn) {
 		extern void displayNowLoading(void);
 		displayNowLoading();
@@ -1175,12 +1199,14 @@ int dsiMenuTheme(void) {
 		snd().loadStream(true);
 	}
 
+	// the MAIN LOOP!
 	while (1) {
 		std::vector<std::string_view> extensionList = {
 			".nds", ".dsi", ".ids", ".srl", ".app", ".argv", // NDS
 			".agb", ".gba", ".mb" // GBA
 		};
 
+		// april fools easter egg (add more extensions?)
 		{
 			char currentDate[16];
 			time_t Raw;
@@ -1201,10 +1227,12 @@ int dsiMenuTheme(void) {
 			}
 		}
 
+		// DSTWO cart compatibility
 		if (memcmp(io_dldi_data->friendlyName, "DSTWO(Slot-1)", 0xD) == 0) {
 			extensionList.emplace_back(".plg"); // DSTWO Plugin
 		}
 
+		// virtual console add-on will detect other extensions
 		if (emulatorsInstalled) {
 			std::vector<std::string_view> extensionListEmus = {
 				".a26", // Atari 2600
@@ -1239,6 +1267,7 @@ int dsiMenuTheme(void) {
 			}
 		}
 
+		// multimedia allows playing video
 		if (multimediaInstalled) {
 			std::vector<std::string_view> extensionListMedia = {
 				".avi", // Xvid (AVI)
@@ -1254,6 +1283,7 @@ int dsiMenuTheme(void) {
 			}
 		}
 
+		// hide blocked extensions
 		if(ms().blockedExtensions.size() > 0) {
 			auto toErase = std::remove_if(extensionList.begin(), extensionList.end(), [](std::string_view str) {
 				return std::find(ms().blockedExtensions.begin(), ms().blockedExtensions.end(), str) != ms().blockedExtensions.end();
@@ -1301,6 +1331,7 @@ int dsiMenuTheme(void) {
 				pathLen++;
 			}
 
+			// CLI arguments being passed to rom (via argv file)
 			bool isArgv = false;
 			if (extension(filename, {".argv"})) {
 				ms().romPath[ms().secondaryDevice] = std::string(filePath) + std::string(filename);
